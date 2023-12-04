@@ -4,5 +4,43 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+#input-text {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+}
+
+#add-button {
+    padding: .5rem;
+    margin-bottom: 2rem;
+}
+
+#list-todo {
+    list-style: none;
+    text-align: center;
+}
+
+#list-todo li {
+    margin-bottom: 0.5rem;
+}
+
+span {
+    padding: 0 1rem;
+}
+
 .completed {
     text-decoration: line-through;
+}

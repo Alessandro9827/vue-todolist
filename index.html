@@ -12,15 +12,19 @@
 <body>
     <div id="app">
         <h1>Todo List</h1>
+        <div class="input-container">
+            <input id="input-text" v-model="newToDoEl" @keyup.enter="addTodo" placeholder="Aggiungi un nuovo todo">
+            <button id="add-button" @click="addTodo">Aggiungi</button>
+        </div>
         
-        <input v-model="newToDoEl" @keyup.enter="addTodo" placeholder="Aggiungi un nuovo todo">
-        <button @click="addTodo">Aggiungi Todo</button>
         
-        <ul>
+        <ul id="list-todo">
           <li v-for="(todo, index) in toDoList" :key="index">
             <input type="checkbox" v-model="todo.done">
             <span :class="{ 'completed': todo.done }">{{ todo.text }}</span>
-            <button @click="removeTodo(index)">Rimuovi</button>
+            <button @click="removeTodo(index)">
+                <i class="fa-solid fa-circle-xmark" style="color: #ff0000;"></i>
+            </button>
           </li>
         </ul>
       </div>

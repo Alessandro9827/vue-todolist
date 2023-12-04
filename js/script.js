@@ -17,8 +17,9 @@ createApp({
     return {
       newToDoEl: "",
       toDoList: [
-        { text: 'Fare la spesa', done: false },
+        { text: 'Preparare il caffè', done: false },
         { text: 'Studiare Vue.js', done: true },
+        { text: 'Scrivere codice', done: false },
       ]
     };
   },
